@@ -4,13 +4,11 @@ The structure of the application includes a view module, data module and control
 
 The View Module
 
-Index.html
 In the index.html page, the user fills in the number of times they would like the dice rolled and select a number 
 of how many sides each dice has (4, 5, 8, 10, 12 or 20). It is clear that all dices have the same number of faces.
 The form on the index.html is processed by a method called rollDice which is a part of the HomeController class.
 The header, footer and the image of the dice on both html pages is provided in the supplement.html page.
 
-rollResult.html
 The rollResult.html page is a Thymeleaf template which retrieves the current dice object from the HomeController and
 outputs the expected result.The 'Same Again' hyperlink links back tothe controller so the exact same number and type
 of dice are rolled. The 'New Roll' hyperlink removes all records of the previous rolling from the database as well as 
