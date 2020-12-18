@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Final Exam</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" th:href="@{/css/style.css}">
+    </head>
+    <body>
+    
+    <table>
+    <td><img th:src="@{'/images/dice.png'}"></td></td>
+    <td>
+     <form method="post" th:action="@{/rollDice}">
+            <table>
+                <tr>
+                    <td>Number of Dice:</td>
+                    <td><input type="number" name="num" style="width:50px;"min="0" required></td>
+                </tr>
+                <tr>
+                    <td>Type of Dice:</td>
+                    <td>
+                        <select name="type" style="width:50px;">
+                            <option>4</option>
+                            <option selected>6</option>
+                            <option>8</option>
+                            <option>10</option>
+                            <option>12</option>
+                            <option>20</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="submit" value="Roll!"></td>
+                </tr>
+            </table>
+        </form>
+    </td>
+    </table>
+    
+       
+      
+    </body>
+</html>

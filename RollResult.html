@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<div class="index">
+<h1>Here are your results</h1>
+
+<table>
+<tbody>
+
+	<tr>Results:<td th:each="result : ${results}" th:text="${result}"></td>
+    Total: <td th:text="${sum}" /> </tr>
+</tbody>
+</table>
+
+
+
+<p><a th:href="@{/newRoll}">New Roll</a></div>
+<p><a th:href="@{/rollDicel}">Same Again</a></div>
+</body>
+</html>
